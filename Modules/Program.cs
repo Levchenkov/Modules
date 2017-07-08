@@ -4,7 +4,6 @@ using System.Linq;
 
 namespace Modules
 {
-    // посмотреть как сделаны на HSS вертикальные слои, WCF?
     public class Program
     {
         public static void Main(string[] args)
