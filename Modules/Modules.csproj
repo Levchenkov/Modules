@@ -45,6 +45,11 @@
   <ItemGroup>
     <Compile Include="Application.cs" />
     <Compile Include="ApplicationSettings.cs" />
+    <Compile Include="BackendModule.cs" />
+    <Compile Include="ModuleFactory.cs" />
+    <Compile Include="DatabaseModule.cs" />
+    <Compile Include="FileStorageModule.cs" />
+    <Compile Include="FrontendModule.cs" />
     <Compile Include="Host.cs" />
     <Compile Include="HostBalancer.cs" />
     <Compile Include="HostRequestCounter.cs" />

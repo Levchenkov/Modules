@@ -28,7 +28,9 @@ namespace Modules
         {
             var counter = hostCounters.Dequeue();
             counter.ActiveRequestCount++;
-            return counter.Host.Process(request);
+            var response = counter.Host.Process(request);
+            hostCounters.Enqueue(counter);
+            return response;
         }
     }
 }

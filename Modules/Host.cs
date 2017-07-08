@@ -19,7 +19,7 @@ namespace Modules
 
             foreach (var moduleSettings in settings.Modules)
             {
-                var module = new Module(this, moduleSettings);
+                var module = ModuleFactory.CreateModule(this, moduleSettings);
                 modules.Add(module.Type, module);
             }
         }

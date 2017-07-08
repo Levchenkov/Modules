@@ -5,7 +5,6 @@ using System.Linq;
 namespace Modules
 {
     // посмотреть как сделаны на HSS вертикальные слои, WCF?
-    // todo: из фронта надо вызвать бэк и тд
     public class Program
     {
         public static void Main(string[] args)
@@ -88,6 +87,7 @@ namespace Modules
 
                 var response = application.Process(request);
                 Console.WriteLine(response.Result);
+                Console.WriteLine();
             }
         }
     }

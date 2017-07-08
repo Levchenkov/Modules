@@ -1,6 +1,8 @@
-﻿namespace Modules
+﻿using System;
+
+namespace Modules
 {
-    public class Module
+    public abstract class Module
     {
         public Module(Host host, ModuleSettings settings)
         {
@@ -25,13 +27,6 @@
             
         }
 
-        public ModuleResponse Process(ModuleRequest request)
-        {
-            // todo: из фронта надо вызвать бэк и тд
-            return new ModuleResponse
-            {
-                Data = string.Format("{0}: response for {1}", Host.Name, request.Data)
-            };
-        }
-    }
+        public abstract ModuleResponse Process(ModuleRequest request);
+    }    
 }
